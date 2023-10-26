@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Lecture Page{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<div class="lecture-container">
+    <h1 class="lecture-title">강의 제목: 프로그래밍 기초</h1>
+    <div class="aspect-ratio-container">
+        <iframe class="lecture-video" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+{% endblock %}

@@ -1,0 +1,115 @@
+
+.layer {
+    padding: 20px;
+    text-align: center;
+}
+.top-layer {
+    background-color: #f8d7da;
+}
+.middle-layer {
+    display: flex;
+    height: 650px;
+}
+.middle-layer div {
+    flex: 1;
+    /* padding: 20px; */
+}
+.container-summary {
+    background-color: #d4edda;
+}
+
+#network {
+    width:100%;
+    height:550px;
+}
+.container-quiz {
+    background-color: #d1ecf1;
+}
+
+
+.quiz-content {
+    height : 550px;
+    overflow-y: auto;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+}
+.quiz-question {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.bottom-layer {
+    background-color: #fff3cd;
+}
+
+.container-video video {
+    max-width: 100%;
+    width: 100%;
+    height: auto; /* 비디오의 높이가 자동으로 조절되도록 설정 */
+}
+
+.title-row {
+    display: flex;
+    /* align-items: center; */
+}
+
+.h1-title, 
+.tab-button {
+    margin-left: 10px;
+}
+
+.h1-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+
+/* Login Page */
+#login {
+    display: flex;
+
+    justify-content: center; 
+    /*align-items: center; */
+   
+}
+.container-login{
+   
+    padding: 50px;
+   
+}
+
+
+/* lecture page*/
+#feedback {
+    padding-left:100px;
+    padding-right:100px;
+}
+.lecture-container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.lecture-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.aspect-ratio-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 비율 */
+}
+
+.lecture-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

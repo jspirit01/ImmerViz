@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Feedback{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmersionVisualization</title>  
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://unpkg.com/vis-network/dist/vis-network.min.css">
+    <script src="https://unpkg.com/vis-network/dist/vis-network.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.0"></script>
+
+</head> 
+<body>
+    <div id="feedback">
+        <div class="layer top-layer">
+            <div class="container-graph">
+                <div class="h1-title">Immersion Graph</div>
+                <canvas id="immersion-chart" width="400" height="80"></canvas>
+            </div>
+        </div>
+        
+        <div class="layer middle-layer">
+            <div class="container-summary">
+                <div class="h1-title">Summary</div>
+                <div id="network" class="network"></div>
+            </div>
+            <div class="container-quiz">
+                <div class="title-row">
+                    <div class="h1-title">Quiz</div>
+                    <button class="btn-quiz-maker tab-button">Generate Quiz</button>
+                </div>
+                <div class="quiz-content"></div>
+            </div>
+        </div>
+
+        <div class="layer bottom-layer">
+            <div class="container-video">
+                <div class="title-row">
+                    <div class="h1-title">Video</div>
+                    <button class="btn-play-time tab-button">Go to</button>
+                </div>
+                <h1 class="lecture-title">강의 제목: 프로그래밍 기초</h1>
+                <video src="static/video/sample_video.mp4" controls></video>
+                
+            </div>
+        </div>
+    </div>      
+</body>
+</html>
+
+<script type="module" src="static/js/network.js"></script>
+<script type="module" src="static/js/drawchart.js"></script>
+<script type="module" src="static/js/quiz.js"></script>
+<script type="module" src="static/js/videoplay.js"></script>
+{% endblock %}
